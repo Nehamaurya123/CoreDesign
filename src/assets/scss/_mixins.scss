@@ -1,0 +1,38 @@
+@mixin weight(){
+  @each $weight in $weights{
+    .w#{$weight} {
+      font-weight: $weight !important;
+    }
+  }
+}
+
+@mixin font-sizes(){
+  @each $name, $size in $font-sizes {
+    .f#{$name} {
+      font-size: #{$size}rem;
+      line-height: #{$size + (math.div($size, 2))}rem;
+    }
+  }
+}
+
+@mixin spacing {
+  @each $space in $spaceamounts {
+    .m-#{$space} {
+      margin: #{$space}px !important;
+    }
+    
+    .p-#{$space} {
+      padding: #{$space}px !important;
+    }
+    
+    @each $side in $sides {
+      .m#{str-slice($side, 0, 1)}-#{$space} {
+        margin-#{$side}: #{$space}px !important;
+      }
+  
+      .p#{str-slice($side, 0, 1)}-#{$space} {
+        padding-#{$side}: #{$space}px !important;
+      }
+    }
+  }
+}

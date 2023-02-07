@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1,maximum-scale=1" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="shortcut icon" href="/assets/img/favicon.png" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/assets/css/app.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/assets/js/app.min.js"></script>
+</head>
+
+<body>
+   
+    <!-- Home Banner  -->
+    <div class="main-container">
+        <div class="sidebar">
+            @@include('components/sidebar.html')
+        </div>
+        <!-- <div class="header"> -->
+            @@include('components/header.html')
+            <!-- ksdhf
+        </div> -->
+    <div class="main-page">
+        <div class="create-emp">
+            <div class="create-new-emp">
+                <div class="new-emp">Create New Employee </div>  
+                <div class="fill-form">Fill this form to create a project</div>              
+            </div>
+            <div class="button-container">
+                <div class="reset-button">Reset Details</div>
+                <div class="submit-button">Submit Details</div>
+            </div>
+        </div>
+
+        <div class="form">
+            <div class="input name">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Employee Name</span></div>
+            </div>
+            <div class="input id">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Employee Id</span></div>
+            </div>
+            <div class="input form-icon birth">
+                <div class="placeholder"><input type="text" placeholder="Date of birth"/></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/calendar_month.svg" alt="">
+                </div>
+            </div>
+            <div class="input dasig">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Dasignation</span></div>
+            </div>
+            <div class="input form-icon dasig">
+                <div class="placeholder"><input type="text" placeholder="Phone"/></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon dasig">
+                <div class="placeholder"><input type="text" placeholder="Joining Date"/></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/calendar_month.svg" alt="">
+                </div>
+            </div>
+            <div class="input">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Personal Email</span></div>
+            </div>
+            <div class="input">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Work Email</span></div>
+            </div>
+            <div class="input">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Linkedin URL</span></div>
+            </div>
+            <div class="input form-icon">
+                <div class="placeholder">
+                    <select>
+                        <option>Employee Type</option>
+                    </select>
+                </div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon">
+                <div class="placeholder">
+                    <select>
+                        <option>Job Type</option>
+                    </select>
+                </div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Type of Salary</span></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Work Team</span></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Attachment</span></div>
+                <div class="form-ic">
+                    <img src="../../assets/img/upload.svg" alt="">
+                </div>
+            </div>
+            <div class="input form-icon skill">
+                <div class="placeholder"><input type="text"/>
+                    <span class="labels">Skills</span>
+                </div>
+                <div class="form-ic">
+                    <img src="../../assets/img/keyboard_arrow_down.svg" alt="">
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+    </body>
+    </html>

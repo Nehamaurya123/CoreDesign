@@ -1,0 +1,407 @@
+@import "_variables";
+@import "_fonts";
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:hover {
+  outline: none;
+  text-decoration: none;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: $font-family;
+  font-weight: 400;
+  background: $color-white;
+  font-size: 18px;
+
+  @media screen and (max-width:768px) {
+    padding-top: 56px;
+  }
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $color-text-light;
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: $color-text-light;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: $color-text-light;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.5;
+  color: $color-text-dark;
+  ;
+}
+
+h1 {
+  font-size: 40px;
+
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
+}
+
+h2 {
+  font-size: 32px;
+
+  @media screen and (max-width:768px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  line-height: 1.5;
+  color: $color-text-light;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+.relative {
+  position: relative;
+}
+
+// .logo-mark {
+//   width: 94px;
+//   height: 90px;
+//   background-image: url(/assets/img/patterns/logo.svg);
+//   background-position: center center;
+//   background-repeat: no-repeat;
+
+//   &.logo-mark-grey {
+//     background-image: url(/assets/img/celsior-logo-grey.svg);
+//     background-size: cover;
+//   }
+// }
+
+// section {
+//   padding: 80px 0;
+// }
+
+// .sliders {
+//   .indicators {
+//     display: flex;
+//     align-items: center;
+//     justify-content: flex-start;
+//     position: relative;
+
+//     a {
+//       width: 20px;
+//       height: 20px;
+//       border-radius: 50%;
+//       background: transparent;
+//       border: 2px solid #7a869a;
+//       opacity: 1;
+//       display: inline-block;
+//       cursor: pointer;
+
+//       @media screen and (max-width:768px) {
+//         width: 16px;
+//         height: 16px;
+//       }
+
+//       &.active {
+//         background: $color-primary;
+//         border: 2px solid $color-primary;
+//       }
+
+//       &.slider-next,
+//       &.slider-back {
+//         border: none;
+//         position: relative;
+
+//         &::before {
+//           content: "";
+//           background: url(../img/icon/ArrowLine.svg) no-repeat;
+//           width: 24px;
+//           height: 24px;
+//           position: absolute;
+//           left: 0;
+//           top: -4px;
+
+//           @media screen and (max-width:768px) {
+//             top: -5px;
+//           }
+//         }
+//       }
+
+//       &.slider-back {
+//         margin-right: 7px;
+//       }
+
+//       &.slider-next {
+//         margin-left: 5px;
+
+//         &::before {
+//           transform: rotate(180deg);
+//           top: -4px;
+
+//           @media screen and (max-width:768px) {
+//             top: -5px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// .partner-logo {
+//   width: 186px;
+//   height: 94px;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   display: inline-block;
+
+//   @media screen and (max-width:768px) {
+//     width: 100%;
+//   }
+
+//   &.margin-right-400 {
+//     margin-right: 400px;
+//   }
+
+//   img {
+//     width: 100%;
+//     height: 100%;
+//   }
+
+//   // &.anywhere365 {
+//   //   background-image: url(/assets/img/partner/anywhere365.png);
+//   // }
+
+//   // &.applitools {
+//   //   background-image: url(/assets/img/partner/applitools.png);
+//   // }
+
+//   // &.arcticwolf {
+//   //   background-image: url(/assets/img/partner/arcticwolf.png);
+//   // }
+
+//   // &.aws {
+//   //   background-image: url(/assets/img/partner/aws.png);
+//   // }
+
+//   // &.corent {
+//   //   background-image: url(/assets/img/partner/corent.png);
+//   // }
+
+//   // &.eggplant {
+//   //   background-image: url(/assets/img/partner/eggplant.png);
+//   // }
+
+//   // &.informatica {
+//   //   background-image: url(/assets/img/partner/informatica.png);
+//   // }
+
+//   // &.kobiton {
+//   //   background-image: url(/assets/img/partner/kobiton.png);
+//   // }
+
+//   // &.microsoft {
+//   //   background-image: url(/assets/img/partner/microsoft.png);
+//   // }
+
+//   // &.netfoundry {
+//   //   background-image: url(/assets/img/partner/netfoundry.png);
+//   // }
+
+//   // &.panorays {
+//   //   background-image: url(/assets/img/partner/panorays.png);
+//   // }
+
+//   // &.ringcentral {
+//   //   background-image: url(/assets/img/partner/ringcentral.png);
+//   // }
+
+//   // &.snowflake {
+//   //   background-image: url(/assets/img/partner/snowflake.png);
+//   // }
+
+//   // &.straviso {
+//   //   background-image: url(/assets/img/partner/straviso.png);
+//   // }
+// }
+
+// .industry-logo {
+//   width: 106px;
+//   height: 106px;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+//   &.cio {
+//     background-image: url(/assets/img/industry-logo/cio.png);
+//   }
+
+//   &.hbr {
+//     background-image: url(/assets/img/industry-logo/hbr.png);
+//   }
+
+//   &.idc {
+//     background-image: url(/assets/img/industry-logo/idc.png);
+//   }
+// }
+
+// .vcenter {
+//   height: 100%;
+//   display: flex;
+//   align-items: center;
+// }
+
+// .tag {
+//   font-size: 14px;
+//   padding: 8px 16px;
+//   display: inline-block;
+//   background-color: $color-text;
+//   color: $color-white;
+//   border-radius: 2px;
+
+//   &.tag-p {
+//     background-color: $color-primary;
+//   }
+
+//   &.tag-s {
+//     background-color: $color-secondary;
+//   }
+
+//   &.tag-n {
+//     background-color: $color-dark-blue;
+//   }
+
+//   &.tag-small {
+//     padding: 4px 6px;
+//     background-color: $color-dark-green;
+//     line-height: 1.2;
+//   }
+// }
+
+
+// .tc {
+//   text-align: center;
+//   margin-top: 40px;
+// }
+
+// .dot {
+//   width: 50px;
+//   height: 66px;
+//   background-position: center center;
+//   background-size: contain;
+//   background-repeat: no-repeat;
+//   opacity: 0.2;
+//   z-index: 1;
+
+//   &.first {
+//     background-image: url(/assets/img/patterns/circles1.svg);
+//   }
+
+//   &.second {
+//     background-image: url(/assets/img/patterns/circles2.svg);
+//   }
+
+//   &.third {
+//     background-image: url(/assets/img/patterns/circles3.svg);
+//   }
+// }
+
+// .sico {
+//   display: inline-block;
+//   width: 24px;
+//   height: 24px;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+
+//   &.facebook {
+//     background-image: url(/assets/img/icon/facebook.svg);
+//   }
+
+//   &.linkedin {
+//     background-image: url(/assets/img/icon/linkedin.svg);
+//   }
+
+//   &.twitter {
+//     background-image: url(/assets/img/icon/twitter.svg);
+//   }
+// }
+
+// .underline-text {
+//   text-decoration: underline;
+// }
+
+// .page-breadcrumb {
+//   margin-top: 16px;
+
+//   .breadcrumb {
+//     .breadcrumb-item {
+//       a {
+//         color: $color-text-light;
+//         font-weight: 500;
+//         text-decoration: none;
+//       }
+
+//       &.active {
+//         color: $color-primary;
+//         font-weight: 500;
+//       }
+//     }
+//   }
+// }
+
+// .modal-backdrop {
+//   background-color: $color-text-dark;
+// }
+
+// .pad-0 {
+//   @media screen and (max-width:768px) {
+//     padding: 0 !important;
+//   }
+// }
+
+// .c-dark {
+//   color: $color-text-dark;
+// }
+
+// .c-cyan {
+//   color: $color-cyan-dark;
+// }
+
+// .c-orange {
+//   color: $color-primary;
+// }
+
+// .mar-r {
+//   @media screen and (max-width:768px) {
+//     margin-right: 15px;
+//   }
+// }
+
